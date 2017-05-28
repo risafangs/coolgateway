@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+  {% block content %}
+
+  <div class="container-fluid" align="center">
+    <h1>{{merchant_name}}'s activity summary</h1>
+  </div>
+
+  <div align="left" class="summary">
+
+<h3> Thanks for using COOL GATEWAY! </h3><br>
+
+Your total sales are: ${{ total_sales }} <br>
+The total number of transactions is: {{ total_ct }} <br>
+That's an average order size of: ${{ aov }}<br>
+
+</div>
+{% endblock %}
