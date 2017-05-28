@@ -1,20 +1,16 @@
-Uses:
+This program uses:
 Python version 2.7.13
 Django version 1.11.1
 
-python manage.py runserver
-open the server URL in your browser
-navigate to /gateway/
+To run, download and navigate to the top level directory of the program (coolgateway) and run the server in Terminal:
+> python manage.py runserver
+
+Open a browser with the server address.
+
+To test, enter inputs into the form, click the first link on the index page (create some transactions) and complete the form. All fields are required. Upon completion, you will be redirected to a summary page of transactions for the specific merchant.
+
+If further testing is required (eg adding a merchant, looking at saved inputs, etc.), please refer to the Admin site.
 
 Login to Admin with the credentials:
 testuser
 testpassword
-
-
-
-Taking this (many) steps further: 
-
-User authentication
-https://docs.djangoproject.com/en/1.11/topics/auth/default/
-
-https://stackoverflow.com/questions/8903601/how-to-process-a-form-via-get-or-post-using-class-based-views

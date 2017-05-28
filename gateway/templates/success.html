@@ -2,17 +2,25 @@
 
   {% block content %}
 
+    <!--
+  this is the summary page after a transaction is created
+    !-->
+
   <div class="container-fluid" align="center">
     <h1>{{merchant_name}}'s activity summary</h1>
   </div>
 
   <div align="left" class="summary">
 
-<h3> Thanks for using COOL GATEWAY! </h3><br>
+<h3> Thanks for using Cool Gateway! </h3><br>
 
 Your total sales are: ${{ total_sales }} <br>
 The total number of transactions is: {{ total_ct }} <br>
 That's an average order size of: ${{ aov }}<br>
+
+<br><br>
+
+Do you want to <A HREF="/gateway/">create a new transaction</A>?
 
 </div>
 {% endblock %}
